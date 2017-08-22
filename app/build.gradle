@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "me.jessyan.mvparms.demo"
+        applicationId "com.shen.mymvp"
         minSdkVersion rootProject.ext.android["minSdkVersion"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
         versionCode rootProject.ext.android["versionCode"]
@@ -71,7 +71,7 @@ dependencies {
     compile rootProject.ext.dependencies["paginate"]
     //arms
     compile project(':arms')
-//    compile 'me.jessyan:arms:2.1.6'
+//    compile 'me.jessyan:arms:2.1.5' // 存在问题
     //test
     testCompile rootProject.ext.dependencies["junit"]
     debugCompile rootProject.ext.dependencies["canary-debug"]
