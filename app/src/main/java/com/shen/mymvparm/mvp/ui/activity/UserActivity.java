@@ -9,9 +9,9 @@ import android.support.v7.widget.RecyclerView;
 import com.jess.arms.base.BaseActivity;
 import com.jess.arms.base.DefaultAdapter;
 import com.jess.arms.di.component.AppComponent;
-import com.jess.arms.di.component.DaggerAppComponent;
 import com.jess.arms.utils.UiUtils;
 import com.paginate.Paginate;
+import com.shen.mymvparm.R;
 import com.shen.mymvparm.di.component.DaggerUserComponent;
 import com.shen.mymvparm.di.module.UserModule;
 import com.shen.mymvparm.mvp.contract.UserContract;
@@ -19,7 +19,6 @@ import com.shen.mymvparm.mvp.presenter.UserPresenter;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
 import butterknife.BindView;
-import me.jessyan.mvparms.demo.R;
 import timber.log.Timber;
 
 

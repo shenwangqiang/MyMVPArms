@@ -22,6 +22,8 @@ import com.jess.arms.http.GlobalHttpHandler;
 import com.jess.arms.http.RequestInterceptor;
 import com.jess.arms.integration.ConfigModule;
 import com.jess.arms.utils.UiUtils;
+import com.shen.mymvparm.BuildConfig;
+import com.shen.mymvparm.R;
 import com.shen.mymvparm.mvp.model.api.Api;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
@@ -35,8 +37,6 @@ import java.net.UnknownHostException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import me.jessyan.mvparms.demo.BuildConfig;
-import me.jessyan.mvparms.demo.R;
 import me.jessyan.progressmanager.ProgressManager;
 import me.jessyan.retrofiturlmanager.RetrofitUrlManager;
 import okhttp3.Interceptor;

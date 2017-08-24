@@ -9,11 +9,12 @@ import com.jess.arms.base.BaseHolder;
 import com.jess.arms.di.component.AppComponent;
 import com.jess.arms.http.imageloader.ImageLoader;
 import com.jess.arms.http.imageloader.glide.ImageConfigImpl;
+import com.shen.mymvparm.R;
 import com.shen.mymvparm.mvp.model.entity.User;
 
 import butterknife.BindView;
 import io.reactivex.Observable;
-import me.jessyan.mvparms.demo.R;
+
 
 /**
  * Created by jess on 9/4/16 12:56

@@ -4,12 +4,12 @@ import android.view.View;
 
 import com.jess.arms.base.BaseHolder;
 import com.jess.arms.base.DefaultAdapter;
+import com.shen.mymvparm.R;
 import com.shen.mymvparm.mvp.model.entity.User;
 import com.shen.mymvparm.mvp.ui.holder.UserItemHolder;
 
 import java.util.List;
 
-import me.jessyan.mvparms.demo.R;
 
 /**
  * Created by jess on 9/4/16 12:57
