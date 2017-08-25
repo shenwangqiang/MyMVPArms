@@ -1,4 +1,4 @@
-package com.shen.mymvparm.app.mvp.presenter;
+package com.shen.mymvparm.mvp.presenter;
 
 import android.app.Application;
 
@@ -6,12 +6,12 @@ import com.jess.arms.integration.AppManager;
 import com.jess.arms.di.scope.ActivityScope;
 import com.jess.arms.mvp.BasePresenter;
 import com.jess.arms.http.imageloader.ImageLoader;
+import com.shen.mymvparm.mvp.contract.MainContract;
 
 import me.jessyan.rxerrorhandler.core.RxErrorHandler;
 
 import javax.inject.Inject;
 
-import com.shen.mymvparm.app.mvp.contract.MainContract;
 
 
 @ActivityScope

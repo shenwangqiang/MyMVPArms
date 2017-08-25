@@ -41,7 +41,7 @@
             android:name="com.shen.mymvparm.app.GlobalConfiguration"
             android:value="ConfigModule"/>
 
-        <activity android:name="com.shen.mymvparm.app.mvp.ui.activity.MainActivity">
+        <activity android:name="com.shen.mymvparm.mvp.ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

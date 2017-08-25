@@ -1,4 +1,4 @@
-package com.shen.mymvparm.app.mvp.ui.activity;
+package com.shen.mymvparm.mvp.ui.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,10 +9,10 @@ import com.jess.arms.di.component.AppComponent;
 import com.jess.arms.utils.UiUtils;
 
 import com.shen.mymvparm.R;
-import com.shen.mymvparm.app.di.component.DaggerMainComponent;
-import com.shen.mymvparm.app.di.module.MainModule;
-import com.shen.mymvparm.app.mvp.contract.MainContract;
-import com.shen.mymvparm.app.mvp.presenter.MainPresenter;
+import com.shen.mymvparm.di.component.DaggerMainComponent;
+import com.shen.mymvparm.di.module.MainModule;
+import com.shen.mymvparm.mvp.contract.MainContract;
+import com.shen.mymvparm.mvp.presenter.MainPresenter;
 
 
 import static com.jess.arms.utils.Preconditions.checkNotNull;

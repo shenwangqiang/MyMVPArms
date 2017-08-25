@@ -1,4 +1,4 @@
-package com.shen.mymvparm.app.mvp.model;
+package com.shen.mymvparm.mvp.model;
 
 import android.app.Application;
 
@@ -7,10 +7,10 @@ import com.jess.arms.integration.IRepositoryManager;
 import com.jess.arms.mvp.BaseModel;
 
 import com.jess.arms.di.scope.ActivityScope;
+import com.shen.mymvparm.mvp.contract.MainContract;
 
 import javax.inject.Inject;
 
-import com.shen.mymvparm.app.mvp.contract.MainContract;
 
 
 @ActivityScope

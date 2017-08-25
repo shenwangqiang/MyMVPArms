@@ -1,4 +1,4 @@
-package com.shen.mymvparm.app.mvp.contract;
+package com.shen.mymvparm.mvp.contract;
 
 import com.jess.arms.mvp.IView;
 import com.jess.arms.mvp.IModel;

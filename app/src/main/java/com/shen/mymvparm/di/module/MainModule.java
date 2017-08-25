@@ -1,12 +1,12 @@
-package com.shen.mymvparm.app.di.module;
+package com.shen.mymvparm.di.module;
 
 import com.jess.arms.di.scope.ActivityScope;
+import com.shen.mymvparm.mvp.contract.MainContract;
+import com.shen.mymvparm.mvp.model.MainModel;
 
 import dagger.Module;
 import dagger.Provides;
 
-import com.shen.mymvparm.app.mvp.contract.MainContract;
-import com.shen.mymvparm.app.mvp.model.MainModel;
 
 
 @Module
