@@ -4,8 +4,6 @@ package com.shen.mymvparm.mvp.model.api.database;
 import com.shen.mymvparm.mvp.model.entity.Doc;
 import com.shen.mymvparm.mvp.model.entity.DocDao;
 
-import org.greenrobot.greendao.query.QueryBuilder;
-
 import java.util.ArrayList;
 
 /**
@@ -18,17 +16,17 @@ public class DatabaseImpl implements IDatabase {
 
     @Override
     public long insertDoc(Doc doc) {
-        return 0;
+        return mDocDao.insert(doc);
     }
 
     @Override
     public void delDoc(long id) {
-
+         mDocDao.deleteByKey(id);
     }
 
     @Override
     public void updateDoc(Doc doc) {
-
+        mDocDao.update(doc);
     }
 
     @Override
@@ -39,6 +37,7 @@ public class DatabaseImpl implements IDatabase {
 
     @Override
     public Doc queryDoc(int id) {
-        return null;
+        return mDocDao.queryBuilder().where(DocDao.Properties.Id.eq
+                (id)).build().unique();
     }
 }

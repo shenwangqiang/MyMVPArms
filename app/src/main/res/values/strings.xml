@@ -5,4 +5,16 @@
     <string name="tab_doc">云笔记</string>
     <string name="tab_corp">云协作</string>
     <string name="tab_my">我的</string>
+    <!-- 创建笔记 -->
+    <string name="str_title">标题</string>
+    <string name="help_title">填写标题</string>
+    <string name="str_content">内容</string>
+    <string name="new_doc">新的笔记</string>
+    <string name="edit_doc">编辑笔记</string>
+    <string name="input_content">请输入内容</string>
+
+    <string name="just">刚刚</string>
+    <string name="interval_minute">%1$d分钟前</string>
+    <string name="interval_hour">%1$d小时前</string>
+
 </resources>

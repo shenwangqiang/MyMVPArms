@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.shen.mymvparm.R;
+import com.shen.mymvparm.app.utils.Utils;
 import com.shen.mymvparm.mvp.model.entity.Doc;
 import com.zhy.autolayout.utils.AutoUtils;
 
@@ -31,6 +32,7 @@ public class DocAdapter extends BaseQuickAdapter<Doc, BaseViewHolder> {
     protected void convert(BaseViewHolder helper, Doc item) {
         helper.setText(R.id.tv_title, item.getTitle())
                 .setText(R.id.tv_content, item.getContent())
-                .setText(R.id.tv_modify, item.getLastModify());
+                .setText(R.id.tv_modify, Utils.getTime(mContext,Long.parseLong(item.getLastModify())));
+
     }
 }

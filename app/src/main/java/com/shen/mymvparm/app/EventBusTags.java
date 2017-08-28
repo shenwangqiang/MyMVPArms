@@ -5,5 +5,5 @@ package com.shen.mymvparm.app;
  * Contact with jess.yan.effort@gmail.com
  */
 public interface EventBusTags {
-
+    int REFRESH_DOC = 0;
 }
