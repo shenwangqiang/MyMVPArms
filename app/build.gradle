@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'org.greenrobot.greendao' // apply plugin
 
 android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
@@ -51,6 +52,12 @@ buildscript {
     }
 }
 
+greendao {
+    schemaVersion 1
+    //daoPackage 'com.greendao.gen'
+    //targetGenDir 'src/main/java'
+}
+
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -77,4 +84,7 @@ dependencies {
     debugCompile rootProject.ext.dependencies["canary-debug"]
     releaseCompile rootProject.ext.dependencies["canary-release"]
     testCompile rootProject.ext.dependencies["canary-release"]
+
+    //database
+    compile 'org.greenrobot:greendao:3.2.2'
 }

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3FA862</color>
-    <color name="colorPrimaryDark">#3FA862</color>
+    <color name="colorPrimary">#367FF1</color>
+    <color name="colorPrimaryDark">#367FF1</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white">#FFFFFF</color>
+
+    <color name="tab_blue">#367FF1</color>
+    <color name="tab_gray">#F6F6F6</color>
+    <color name="gray">@android:color/darker_gray</color>
 </resources>

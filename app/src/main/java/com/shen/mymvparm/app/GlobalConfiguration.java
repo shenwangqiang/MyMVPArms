@@ -25,6 +25,7 @@ import com.jess.arms.utils.UiUtils;
 import com.shen.mymvparm.BuildConfig;
 import com.shen.mymvparm.R;
 import com.shen.mymvparm.mvp.model.api.Api;
+import com.shen.mymvparm.mvp.model.api.database.GreenDaoHelper;
 import com.squareup.leakcanary.LeakCanary;
 import com.squareup.leakcanary.RefWatcher;
 
@@ -179,6 +180,7 @@ public final class GlobalConfiguration implements ConfigModule {
                 }
                 //leakCanary内存泄露检查
                 ((App) application).getAppComponent().extras().put(RefWatcher.class.getName(), BuildConfig.USE_CANARY ? LeakCanary.install(application) : RefWatcher.DISABLED);
+                GreenDaoHelper.initDatabase(application);
             }
 
             @Override

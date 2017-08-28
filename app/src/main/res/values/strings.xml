@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MVPArms</string>
+
+    <!-- 主页 -->
+    <string name="tab_doc">云笔记</string>
+    <string name="tab_corp">云协作</string>
+    <string name="tab_my">我的</string>
 </resources>
