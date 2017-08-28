@@ -87,4 +87,8 @@ dependencies {
 
     //database
     compile 'org.greenrobot:greendao:3.2.2'
+
+    compile 'com.balysv:material-ripple:1.0.2'
+
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.15'
 }

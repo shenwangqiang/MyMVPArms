@@ -16,7 +16,6 @@ import java.util.ArrayList;
 public class DatabaseImpl implements IDatabase {
     private DocDao mDocDao = GreenDaoHelper.getDaoSession().getDocDao();
 
-
     @Override
     public long insertDoc(Doc doc) {
         return 0;
@@ -34,7 +33,8 @@ public class DatabaseImpl implements IDatabase {
 
     @Override
     public ArrayList<Doc> queryDocs(int u_id) {
-        return null;
+        return (ArrayList<Doc>) mDocDao.queryBuilder().where(DocDao.Properties.Uid.eq
+                (u_id)).orderDesc(DocDao.Properties.Create).build().list();
     }
 
     @Override

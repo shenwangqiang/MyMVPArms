@@ -20,14 +20,17 @@ public class Doc {
     private String create;
     @Property
     private String lastModify;
-    @Generated(hash = 1116421754)
+    @Property
+    private int uid;
+    @Generated(hash = 614510299)
     public Doc(Long id, String title, String content, String create,
-            String lastModify) {
+            String lastModify, int uid) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.create = create;
         this.lastModify = lastModify;
+        this.uid = uid;
     }
     @Generated(hash = 960349246)
     public Doc() {
@@ -62,4 +65,11 @@ public class Doc {
     public void setLastModify(String lastModify) {
         this.lastModify = lastModify;
     }
+    public int getUid() {
+        return this.uid;
+    }
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
 }
