@@ -80,6 +80,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
 
     @Override
     public void initData(Bundle savedInstanceState) {
+
         mFragments.clear();
         mFragments.add(new DocFragment());
         mFragments.add(new CorpFragment());

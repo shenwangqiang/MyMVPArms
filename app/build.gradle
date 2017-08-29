@@ -93,4 +93,5 @@ dependencies {
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.15'
 
     compile 'com.rengwuxian.materialedittext:library:2.1.4'
+
 }

@@ -16,5 +16,6 @@
     <string name="just">刚刚</string>
     <string name="interval_minute">%1$d分钟前</string>
     <string name="interval_hour">%1$d小时前</string>
+    <string name="interval_day">%1$d天前</string>
 
 </resources>

@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.jess.arms.base.BaseFragment;
 import com.jess.arms.di.component.AppComponent;
+import com.jess.arms.utils.UiUtils;
 import com.shen.mymvparm.R;
 import com.shen.mymvparm.app.Constants;
 import com.shen.mymvparm.app.EventBusTags;
@@ -28,6 +29,7 @@ import org.simple.eventbus.Subscriber;
 import org.simple.eventbus.ThreadMode;
 
 import java.util.ArrayList;
+
 
 
 /**
@@ -60,6 +62,7 @@ public class DocFragment extends BaseFragment implements View.OnClickListener{
         mIvSync = (ImageView) view.findViewById(R.id.iv_sync);
         mRvContainer = (RecyclerView) view.findViewById(R.id.rv_container);
         view.findViewById(R.id.tv_add).setOnClickListener(this);
+        mIvSync.setOnClickListener(this);
 
         mDatabase = new DatabaseImpl();
         mDocs = mDatabase.queryDocs(Constants.LOCAL_ID);
@@ -112,6 +115,8 @@ public class DocFragment extends BaseFragment implements View.OnClickListener{
                 bundle.putSerializable("doc",new Doc());
                 intent.putExtras(bundle);
                 startActivity(intent);
+                break;
+            case R.id.iv_sync:
                 break;
         }
     }
